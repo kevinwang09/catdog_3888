@@ -6,7 +6,7 @@ library(DT)
 # load vgg19 model pretrained with imagenet
 model = application_vgg19(weights = 'imagenet')
 
-labels_tbl = read_csv("../supp/labels_tbl.csv")
+labels_tbl = read_csv("supp/labels_tbl.csv")
 
 # define image preprocessor for use with keras vgg19
 image_preprocessor = function(image_path) {
